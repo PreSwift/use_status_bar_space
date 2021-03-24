@@ -1,7 +1,7 @@
 name: use_status_bar_space
 description: A new Flutter plugin to set if use status bar space.
 version: 0.0.1
-homepage:
+homepage: https://github.com/PreSwift/use_status_bar_space
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
