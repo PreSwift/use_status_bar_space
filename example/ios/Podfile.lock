@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - use_status_bar_space (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - use_status_bar_space (from `.symlinks/plugins/use_status_bar_space/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  use_status_bar_space:
+    :path: ".symlinks/plugins/use_status_bar_space/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
+  use_status_bar_space: 798ba7a0a930629b6176e582848dc865e5acf0dd
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.10.0.rc.1

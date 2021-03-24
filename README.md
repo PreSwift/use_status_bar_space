@@ -2,6 +2,9 @@
 
 A new Flutter plugin to set if use status bar space.
 
+Just work on android.
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter
