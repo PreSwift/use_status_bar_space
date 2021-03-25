@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:async';
-
-import 'package:flutter/services.dart';
 import 'package:use_status_bar_space/use_status_bar_space.dart';
 
 void main() {
@@ -14,12 +11,11 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _platformVersion = 'Unknown';
+  bool use = false;
 
   @override
   void initState() {
     super.initState();
-    UseStatusBarSpace.use();
   }
 
 
@@ -31,7 +27,23 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+          child: Text('is use : $use\n'),
+        ),
+        floatingActionButton: MaterialButton(
+          onPressed: () {
+            if (!use) {
+              setState(() {
+                use = true;
+              });
+              UseStatusBarSpace.use();
+            } else {
+              setState(() {
+                use = false;
+              });
+              UseStatusBarSpace.unUse();
+            }
+          },
+          child: Icon(Icons.add_circle_sharp, size: 50, color: Colors.red,),
         ),
       ),
     );
